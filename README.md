@@ -6,7 +6,7 @@ Interfaces WebNowPlaying to Macro Deck 2! With WebNowPlaying Redux support!
 The default and it is recommended to use this.
 https://github.com/keifufu/WebNowPlaying-Redux
 
-### Fork of https://jbcarreon123.github.io/ for new MacroDeck versions
+### Fork of [https://jbcarreon123.github.io/](https://github.com/jbcarreon123/WebNowPlaying-Redux-Macro-Deck) for new MacroDeck versions
 
 ## Features
 | Action | Description |
