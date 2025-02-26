@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows10.0.22000.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <AssemblyName>WNP-Media</AssemblyName>
+    <RootNamespace>TheFogIOF.WNPPlugin</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Platforms>AnyCPU;x86</Platforms>
+    <Version>1.0.0</Version>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <Authors>TheFogIOF</Authors>
+    <Company />
+    <Description>Interface WebNowPlaying to Macro Deck 2</Description>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/FogIOF/WNP-Macro-Deck</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/FogIOF/WNP-Macro-Deck</RepositoryUrl>
+    <LangVersion>latestmajor</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WNPRedux-Adapter-Library" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ModuleFiles Include="$(TargetDir)*.dll" Exclude="$(TargetDir)System*.dll;$(TargetDir)Microsoft*.dll" DestinationPath="$(SolutionDir)src\MyProject\Modules\MyModule\%(Filename)%(Extension)">
+    </ModuleFiles>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Macro Deck 2">
+      <HintPath>C:\Users\sslav\Desktop\jbcarreon123.WebNowPlayingPlugin\Macro Deck 2.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

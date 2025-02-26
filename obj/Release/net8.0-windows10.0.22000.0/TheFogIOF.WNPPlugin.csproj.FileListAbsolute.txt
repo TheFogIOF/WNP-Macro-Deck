@@ -1,0 +1,19 @@
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\obj\Release\net8.0-windows10.0.22000.0\TheFogIOF.WNPPlugin.csproj.AssemblyReference.cache
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\obj\Release\net8.0-windows10.0.22000.0\TheFogIOF.WNPPlugin.Properties.Resources.resources
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\obj\Release\net8.0-windows10.0.22000.0\TheFogIOF.WNPPlugin.csproj.GenerateResource.cache
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\obj\Release\net8.0-windows10.0.22000.0\TheFogIOF.WNPPlugin.GeneratedMSBuildEditorConfig.editorconfig
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\obj\Release\net8.0-windows10.0.22000.0\TheFogIOF.WNPPlugin.AssemblyInfoInputs.cache
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\obj\Release\net8.0-windows10.0.22000.0\TheFogIOF.WNPPlugin.AssemblyInfo.cs
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\obj\Release\net8.0-windows10.0.22000.0\TheFogIOF.WNPPlugin.csproj.CoreCompileInputs.cache
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\bin\Release\net8.0-windows10.0.22000.0\WNP-Media.deps.json
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\bin\Release\net8.0-windows10.0.22000.0\WNP-Media.dll
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\bin\Release\net8.0-windows10.0.22000.0\WNP-Media.pdb
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\bin\Release\net8.0-windows10.0.22000.0\WNPRedux-Adapter-Library.dll
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\bin\Release\net8.0-windows10.0.22000.0\Microsoft.Windows.SDK.NET.dll
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\bin\Release\net8.0-windows10.0.22000.0\WinRT.Runtime.dll
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\bin\Release\net8.0-windows10.0.22000.0\Macro Deck 2.dll
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\obj\Release\net8.0-windows10.0.22000.0\TheFogIO.9A5D8586.Up2Date
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\obj\Release\net8.0-windows10.0.22000.0\WNP-Media.dll
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\obj\Release\net8.0-windows10.0.22000.0\refint\WNP-Media.dll
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\obj\Release\net8.0-windows10.0.22000.0\WNP-Media.pdb
+D:\programs\Visual Studio Projects\WebNowPlaying-Redux-Macro-Deck-3.2.0\obj\Release\net8.0-windows10.0.22000.0\ref\WNP-Media.dll

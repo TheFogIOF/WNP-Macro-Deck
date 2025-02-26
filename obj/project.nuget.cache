@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "+DbrmiZn8vk=",
+  "success": true,
+  "projectFilePath": "D:\\programs\\Visual Studio Projects\\WebNowPlaying-Redux-Macro-Deck-3.2.0\\TheFogIOF.WNPPlugin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sslav\\.nuget\\packages\\wnpredux-adapter-library\\2.0.1\\wnpredux-adapter-library.2.0.1.nupkg.sha512",
+    "C:\\Users\\sslav\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22000.57\\microsoft.windows.sdk.net.ref.10.0.22000.57.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"WNPRedux-Adapter-Library 2.0.1\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0-windows10.0.22000\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "WNPRedux-Adapter-Library",
+      "targetGraphs": [
+        "net8.0-windows10.0.22000"
+      ]
+    }
+  ]
+}

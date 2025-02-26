@@ -1,0 +1,12 @@
+{
+  "type": "Plugin",
+  "name": "WNP Media Plugin",
+  "author": "TheFogIOF",
+  "packageId": "TheFogIOF.WNPPlugin",
+  "version": "1.0.0",
+  "target-plugin-api-version": 40,
+  "target-macro-deck-version": "2.13.0-b9",
+  "repository": "https://github.com/FogIOF/WNP-Macro-Deck",
+  "dll": "WNP-Media.dll",
+  "author-discord-userid": 943118493312778320
+}
