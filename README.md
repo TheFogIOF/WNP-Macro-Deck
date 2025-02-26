@@ -1,5 +1,5 @@
 # WebNowPlaying Plugin for Macro Deck 2
-Interfaces WebNowPlaying to Macro Deck 2! Now with WebNowPlaying Redux support!
+Interfaces WebNowPlaying to Macro Deck 2! With WebNowPlaying Redux support!
 
 ## Supported Extensions
 ### WebNowPlaying Redux (browser extension)
