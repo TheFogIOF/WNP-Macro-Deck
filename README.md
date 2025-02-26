@@ -23,6 +23,7 @@ It is now depectated and it is no longer available.
 | Previous | Previous track |
 | Shuffle | Toggle shuffle |
 | Repeat | Toggle repeat |
+| Update States | Instant Update All Plugin States |
 
 ## Variables
 | Variable | Description | Type |
