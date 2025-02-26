@@ -13,8 +13,7 @@ Macro Deck 2 is not supposed to run on Linux, so...
 ### WNP Companion / Spicetify (Legacy)
 It is now depectated and it is no longer available.
 
-### Fork of
-https://jbcarreon123.github.io/
+### Fork of https://jbcarreon123.github.io/ for new MacroDeck versions
 
 ## Features
 | Action | Description |
