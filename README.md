@@ -42,5 +42,6 @@ https://jbcarreon123.github.io/
 | wnp_repeatone | Shows when the repeat is on single track mode | Boolean |
 | wnp_shuffle | Shows when the shuffle is turned on or off | Boolean |
 | wnp_position_percent | Shows the position percentage | Float |
+| wnp_music_bar | Shows music bar | String |
 
 - [WebNowPlaying Redux Adapter Library](https://github.com/keifufu/WNPRedux-Adapter-Library)
