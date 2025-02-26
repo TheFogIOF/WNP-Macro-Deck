@@ -13,8 +13,8 @@ Macro Deck 2 is not supposed to run on Linux, so...
 ### WNP Companion / Spicetify (Legacy)
 It is now depectated and it is no longer available.
 
-## Documentation
-https://jbcarreon123.github.io/docs/md2/wnpl
+### Fork of
+https://jbcarreon123.github.io/
 
 ## Features
 | Action | Description |
@@ -43,9 +43,4 @@ https://jbcarreon123.github.io/docs/md2/wnpl
 | wnp_shuffle | Shows when the shuffle is turned on or off | Boolean |
 | wnp_position_percent | Shows the position percentage | Float |
 
-### This is a plugin for [Macro Deck 2](https://github.com/SuchByte/Macro-Deck), it does NOT function as a standalone app
-<img height="64px" src="https://macrodeck.org/images/macro_deck_2_official_plugin.png" />
-
-## Third party licenses
-This plugin uses some awesome 3rd party libraries:
 - [WebNowPlaying Redux Adapter Library](https://github.com/keifufu/WNPRedux-Adapter-Library)
