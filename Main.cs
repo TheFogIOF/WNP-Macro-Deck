@@ -10,6 +10,7 @@ using System.Timers;
 using WNPReduxAdapterLibrary;
 using SuchByte.MacroDeck.ActionButton;
 using System.Drawing;
+using System.Threading;
 
 namespace TheFogIOF.WNPPlugin
 {
@@ -21,7 +22,7 @@ namespace TheFogIOF.WNPPlugin
     public class Main : MacroDeckPlugin
     {
         public static Main Instance;
-        private Timer _Timer;
+        private System.Timers.Timer timer;
 
         public Main()
         {
@@ -47,12 +48,10 @@ namespace TheFogIOF.WNPPlugin
                 await InitializeStateAsync();
                 await Init();
 
-                _Timer = new Timer(500)
-                {
-                    Enabled = true
-                };
-                _Timer.Elapsed += OnTimerTick;
-                _Timer.Start();
+                timer = new System.Timers.Timer(500);
+                timer.Elapsed += OnTimerTick;
+                timer.AutoReset = true;
+                timer.Enabled = true;
             }
             catch (Exception e)
             {
@@ -64,32 +63,39 @@ namespace TheFogIOF.WNPPlugin
         {
             var assembly = Assembly.GetExecutingAssembly().GetName().Version;
             string version = $"{assembly.Major}.{assembly.Minor}.{assembly.Build}";
-            WNPRedux.Start(8698, version, ((type, s) => Logger((int)type, s)));
-            WNPReduxNative.Start(8698);
+            WNPRedux.Start(8696, version, ((type, s) => Logger((int)type, s)));
+            WNPReduxNative.Start(8696);
         }
 
         public static async Task InitializeStateAsync()
         {
-            var mediainfo = WNPRedux.MediaInfo;
+            try
+            {
+                var mediainfo = WNPRedux.MediaInfo;
 
-            VariableManager.SetValue("wnp_title", mediainfo.Title, VariableType.String, Main.Instance, null!);
-            VariableManager.SetValue("wnp_album", mediainfo.Album, VariableType.String, Main.Instance, null!);
-            VariableManager.SetValue("wnp_artist", mediainfo.Artist, VariableType.String, Main.Instance, null!);
-            VariableManager.SetValue("wnp_position", mediainfo.Position, VariableType.String, Main.Instance, null!);
-            VariableManager.SetValue("wnp_pos_percent", mediainfo.PositionPercent, VariableType.Float, Main.Instance, null!);
-            VariableManager.SetValue("wnp_duration", mediainfo.Duration, VariableType.String, Main.Instance, null!);
-            VariableManager.SetValue("wnp_player", mediainfo.PlayerName, VariableType.String, Main.Instance, null!);
-            VariableManager.SetValue("wnp_state", mediainfo.State, VariableType.Integer, Main.Instance, null!);
-            VariableManager.SetValue("wnp_volume", mediainfo.Volume, VariableType.Integer, Main.Instance, null!);
-            VariableManager.SetValue("wnp_shuffle", mediainfo.ShuffleActive, VariableType.Bool, Main.Instance, null!);
-            VariableManager.SetValue("wnp_repeatone", mediainfo.RepeatMode == MediaInfo.RepeatModeEnum.ONE, VariableType.Bool, Main.Instance, null!);
-            VariableManager.SetValue("wnp_repeatall", mediainfo.RepeatMode == MediaInfo.RepeatModeEnum.ALL, VariableType.Bool, Main.Instance, null!);
-            VariableManager.SetValue("wnp_is_playing", mediainfo.State == MediaInfo.StateMode.PLAYING, VariableType.Bool, Main.Instance, null!);
-            VariableManager.SetValue("wnp_repeat", mediainfo.RepeatMode != MediaInfo.RepeatModeEnum.NONE, VariableType.Bool, Main.Instance, null!);
-            VariableManager.SetValue("wnp_music_bar", MusicBar(), VariableType.String, Main.Instance, null!);
+                VariableManager.SetValue("wnp_title", mediainfo.Title, VariableType.String, Main.Instance, null!);
+                VariableManager.SetValue("wnp_album", mediainfo.Album, VariableType.String, Main.Instance, null!);
+                VariableManager.SetValue("wnp_artist", mediainfo.Artist, VariableType.String, Main.Instance, null!);
+                VariableManager.SetValue("wnp_position", mediainfo.Position, VariableType.String, Main.Instance, null!);
+                VariableManager.SetValue("wnp_pos_percent", mediainfo.PositionPercent, VariableType.Float, Main.Instance, null!);
+                VariableManager.SetValue("wnp_duration", mediainfo.Duration, VariableType.String, Main.Instance, null!);
+                VariableManager.SetValue("wnp_player", mediainfo.PlayerName, VariableType.String, Main.Instance, null!);
+                VariableManager.SetValue("wnp_state", mediainfo.State, VariableType.Integer, Main.Instance, null!);
+                VariableManager.SetValue("wnp_volume", mediainfo.Volume, VariableType.Integer, Main.Instance, null!);
+                VariableManager.SetValue("wnp_shuffle", mediainfo.ShuffleActive, VariableType.Bool, Main.Instance, null!);
+                VariableManager.SetValue("wnp_repeatone", mediainfo.RepeatMode == MediaInfo.RepeatModeEnum.ONE, VariableType.Bool, Main.Instance, null!);
+                VariableManager.SetValue("wnp_repeatall", mediainfo.RepeatMode == MediaInfo.RepeatModeEnum.ALL, VariableType.Bool, Main.Instance, null!);
+                VariableManager.SetValue("wnp_is_playing", mediainfo.State == MediaInfo.StateMode.PLAYING, VariableType.Bool, Main.Instance, null!);
+                VariableManager.SetValue("wnp_repeat", mediainfo.RepeatMode != MediaInfo.RepeatModeEnum.NONE, VariableType.Bool, Main.Instance, null!);
+                VariableManager.SetValue("wnp_music_bar", MusicBar(), VariableType.String, Main.Instance, null!);
+            }
+            catch (Exception ex)
+            {
+                MacroDeckLogger.Error(Main.Instance, $"There is a error.\r\n{ex}");
+            }
         }
 
-        private async void OnTimerTick(object sender, EventArgs e)
+        private async void OnTimerTick(object sender, ElapsedEventArgs e)
         {
             await InitializeStateAsync();
         }
